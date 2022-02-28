@@ -1,13 +1,144 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+:root {
+    --buttonwidth: 100px;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+body {
+    margin: 0;
+    padding: 0;
+    background: #b7d6fb;
+    font-family: monospace, sans-serif;
+}
+
+h1 {
+    font-size: 45px;
+    padding: 0;
+}
+
+.main-content {
+    margin: 0 auto;
+    width: auto;
+    text-align: center;
+}
+
+/* Header */
+
+.upper-header {
+    display: flex;
+    flex-direction: column;
+}
+
+.centering-item {
+    width: var(--buttonwidth);
+    margin-left: 3em;
+}
+
+.sign-in-btn, .sign-in-btn:visited {
+    color: inherit; 
+    text-decoration: inherit;
+    padding: 5px 25px;
+    background: red;
+    text-align: center;
+    border: 2px solid black;
+    font-weight: bold;
+    font-size: 1rem;
+    border-radius: 5px;
+    margin-right: 3em;
+    align-self: center;
+    text-decoration: none;
+    color: white;
+}
+
+.logged-in-btn, .logged-in-btn:visited {
+    color: inherit; 
+    text-decoration: inherit;
+    padding: 5px 25px;
+    background: green;
+    text-align: center;
+    border: 2px solid black;
+    font-weight: bold;
+    font-size: 1rem;
+    margin-right: 3em;
+    align-self: center;
+    text-decoration: none;
+    color: white;
+}
+
+.sign-in-btn:hover {
+    transform: scale(1.05);
+}
+
+.sign-in-btn:active {
+    transform: scale(0.95);
+}
+
+/* Activity */
+
+.activity-container {
+    height: 75vh;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 8em;
+}
+
+.bored-btn {
+    height: 6em;
+    width: 6em;
+    background: red;
+    color: white;
+    font-weight: bold;
+    border: 2px solid black;
+    border-radius: 50%;
+    font-size: 1.15rem;
+    margin-top: 0.5em;
+    cursor: pointer;
+}
+
+.bored-btn:hover {
+    transform: scale(1.05);
+}
+
+.bored-btn:active {
+    transform: scale(1);
+}
+
+.logged-in-extras {
+    background: #f2f2f2;
+    border: 2px black solid;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    width: 400px;
+    margin-top: 2.5em;
+}
+
+/* Footer */
+
+.footer {
+    border-top: 1px solid black;
+    width: 95%;
+    margin: 0 auto;
+}
+
+.nav-bar {
+    display: flex;
+    justify-content: space-between;
+    width: 250px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.nav-bar p {
+    margin-bottom: 0.5em;
+    margin-left: 0.5em;
+}
+
+a, a:visited {
+    color: black;
+}
+
+
+/* Misc */
+.hidden {
+    display: none;
 }
